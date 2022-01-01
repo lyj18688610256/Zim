@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-15T10:46:45+08:00
+
+====== Map ======
+创建日期 Wednesday 15 December 2021
+
+以下展示的是对一个map中的key和value按照自定义的顺序排序的程序
+
+{{./pasted_image004.png}}
+
+{{./pasted_image001.png}}
+
+
+{{./pasted_image002.png}}
+
+
+java中key值可以重复的map：IdentityHashMap
+但是前提是你必须是两个不同对象，但是这两个不同的对象的值可以是一样的
+如下图，在进行往map中传递数据的时候，这里的x和y就必须先new一下
+比如,想将[3, 4]和 [3, 5]存进map中，那么虽然是相同的3， 但是都new了一下，所以是不同的对象，虽然值是一样的，那么还是可以添加到IdentityHashMap中的
+{{./pasted_image005.png}}
+
+{{./pasted_image003.png}}
+
+
+
+
+

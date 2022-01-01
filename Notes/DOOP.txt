@@ -1,0 +1,63 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-14T15:44:15+08:00
+
+====== DOOP ======
+创建日期 Tuesday 14 December 2021
+
+1.在/home/lee/Downloads/Doop/DroidBench/apk/Aliasing/Merge1.apk中，
+	sms.sendTextMessage("+49 1234", null, __a.attr.b__, null, null); // sink, leak
+还发现这里的a.attr.b是第三个参数，而不是第一个参数
+
+2.分析整个DroidBench时，用python3   bin/analyze-droidbench.py(我的电脑上抬头要用python3)
+安装pip3 用  apt-get install python3-pip
+{{./pasted_image001.png}}
+
+3.在写TTA时，主要改变了以下几个文件
+souffle-logic/addons/information-flow/中的
+VFlow.dl
+common-transfer-methods.dl
+core.dl
+rules.dl
+还有main/context-sensitivity.dl中加入了定义，比如LyjSmallVFlow
+还要在analysis/2-object-sensitive+heap中加入.init mFlow = Flow，这样才会触发VFlow分析
+还要将addons/facts/import.dl替换为原来的文件，发现NumConstantRawInt的定义在最新版的把它删去了，但是在main/context-sensitivity.dl中有用到
+
+12/27/21
+除了上述几个文件的改变外，还需要在common-transfer-methods.dl中加入下面的内容，最主要的是#include "macros.dl"  ，否则会报错找不到
+TaintSourceMethodPattern和LeakingSinkMethodPattern
+
+#include "macros.dl"  
+
+#ifdef DISABLE_POINTS_TO
+// Mark methods as taint-transfer for shallow analyses.
+
+ParamToBaseTaintTransferMethod(0, ?method),
+ParamToRetTaintTransferMethod(?method) :-
+  Method_DeclaringType(?method, "java.lang.StringBuilder"),
+  Method_SimpleName(?method, ?name),
+  (?name = "append" ; ?name = "appendCodePoint").
+
+BaseToRetTaintTransferMethod("<java.lang.StringBuilder: java.lang.String toString()>").
+
+#endif // DISABLE_POINTS_TO
+
+{{./pasted_image002.png}}
+
+
+关于android Aliasing中的merge1.apk得不到结果，我觉得是没有处理好taintValue是第几个参数的问题
+
+当运行下述指令，可以得到refection文件夹下的7个结果，包括4个真实的结果，还有三个模拟Mock的结果
+./doop --analysis 2-object-sensitive+heap   --input-file securibench.jar  --platform java_8_mini --information-flow webapps  --id web --open-programs servlets-only --information-flow-high-soundness --reflection-classic --reflection-substring-analysis --reflection-speculative-use-based-analysis --regex securibench.micro.reflection.*
+
+当运行下述指令时，可以得到4个正确的结果，这里securibench.jar的main入口是securibench.micro.reflection.Harness（--platform java8 也是OK的）
+ ./doop --analysis 2-object-sensitive+heap   --input-file securibench.jar  --platform java_8_mini --information-flow webapps  --id web --information-flow-high-soundness --reflection-classic --reflection-substring-analysis --reflection-speculative-use-based-analysis 
+
+像分析比如JInfoFlow的结果，因为它每个例子都有main函数入口，所以使用--discover-main-methods函数
+{{./pasted_image003.png}}
+
+
+
+
+
+

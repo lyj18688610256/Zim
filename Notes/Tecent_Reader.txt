@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-01-01T14:54:01+08:00
+
+====== Tecent Reader ======
+创建日期 Saturday 01 January 2022
+
+日常生活中的发明原理
+{{./pasted_image.png}}

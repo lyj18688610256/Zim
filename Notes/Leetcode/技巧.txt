@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-20T10:47:59+08:00
+
+====== 技巧 ======
+创建日期 Monday 20 December 2021
+
+如果想按照列来遍历二维数组(可以将j放在外面，i放在最里面)
+{{./pasted_image.png}}

@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-15T10:09:41+08:00
+
+====== ubuntu18.04安装软件 ======
+创建日期 Wednesday 15 December 2021
+
+安装discord
+今天装discord出现问题，跟之前一直没有安装成功的情况是一样的
+{{./pasted_image.png}}
+然后尝试网络方式安装，还是不成功
+{{./pasted_image001.png}}
+
+然后按照提示安装 sudo apt --fix-broken install
+{{./pasted_image003.png}}
+
+再安装discord就可以安装成功了
+{{./pasted_image004.png}}
+

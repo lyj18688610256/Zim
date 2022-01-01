@@ -1,0 +1,60 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-10T10:53:21+08:00
+
+====== IDEA使用技巧 ======
+创建日期 Friday 10 December 2021
+
+快速复制一行：
+		  将光标停在某行，然后ctrl+d
+迅速从上一行的任意位置，到达下一行
+		 ctrl+shift+Enter
+
+注释代码： ctrl + shift + /
+
+先选中代码，使用alt + insert调用出构造器,一般要构造无参数的构造函数和有参数的构造函数
+{{./pasted_image011.png}}
+
+{{./pasted_image.png}}
+
+
+注意：在IDEA中，新建包名，是在src下，而不是在test下（test是不计入包名）
+{{./pasted_image002.png}}
+
+当调出Structure视图之后，可以清晰看到整个类的结构
+{{./pasted_image003.png}}
+
+写注释的方法
+{{./pasted_image004.png}}
+
+当追踪到定义，快速回到上次进入定义的地方，用快捷键 shift [[+ alt]] +  ←
+
+按住alt按键，可以复制多行，而且不是多行，可以选中某列，然后整体复制粘贴
+{{./pasted_image005.png}}
+
+处理异常的快捷键 alt+enter
+{{./pasted_image006.png}}
+
+将当前内容输出的快捷键 .sout
+{{./pasted_image007.png}}
+结果如下
+{{./pasted_image008.png}}
+
+使用fori 再按下enter就可以出现下面的内容
+{{./pasted_image009.png}}
+
+fields.for就可以出现下面的内容
+{{./pasted_image010.png}}
+{{./pasted_image012.png}}
+
+
+删除当前行： 用ctrl + y
+在末尾加上分号： 用ctrl [[+shift]] [[+Enter]]
+
+debug时候F9是从上一个断点运行到下一个断点
+						F8是单步运行
+
+
+
+
+

@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-16T11:10:55+08:00
+
+====== BitBucket ======
+创建日期 Thursday 16 December 2021
+
+在Bitbucket 里面 使用fork
+https://www.jianshu.com/p/70a90492cf59
+当将仓库设置成私有时，就不能用git clone 到本地
+设置成public之后才可以clone
+
+{{./pasted_image.png}}
+要和跟github中类似的方法设置ssh秘钥，就不用设置密码了

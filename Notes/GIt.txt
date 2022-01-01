@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-27T14:34:33+08:00
+
+====== GIt ======
+创建日期 Monday 27 December 2021
+
+1.今天在实验室的电脑上使用了两对github秘钥，分别对应
+lyj18688610256@163.com和 lyj18688610256@gmail.com
+{{./pasted_image.png}}
+
+google浏览器可以同时登录两个不同的github账号

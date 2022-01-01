@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-17T09:23:43+08:00
+
+====== 基础软件会议 ======
+创建日期 Friday 17 December 2021
+
+{{./pasted_image.png}}

@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-28T21:39:01+08:00
+
+====== IDEA Securibench ======
+创建日期 Tuesday 28 December 2021
+
+当在IDEA中想把com和javax变成securibench的依赖时，可以如下图添加
+{{./pasted_image004.png}}
+
+
+编译securibench报错
+{{./pasted_image002.png}}
+设置javac版本
+{{./pasted_image001.png}}
+
+删除project
+{{./pasted_image003.png}}
+

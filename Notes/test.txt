@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-09T21:34:54+08:00
+
+====== test ======
+创建日期 Thursday 09 December 2021
+
+https://zim-wiki.org/
+
+So text can be bold, __italic__,  or **__highlightened__,  X_{2,   }X^{2,}**
+
+
+you can use bullet lists
+* First item
+* second item
+
+As well as checkbox lists:
+[*] some item that is done
+	[*] sub item one
+	[ ] sub item two
+[*] and an open item
+
+
+

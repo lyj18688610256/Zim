@@ -1,0 +1,33 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-15T15:03:09+08:00
+
+====== 队列 ======
+创建日期 Wednesday 15 December 2021
+
+{{./pasted_image001.png}}
+
+二叉堆是一颗完全二叉树
+{{./pasted_image002.png}}
+
+
+二叉树和非完全二叉树
+{{./pasted_image004.png}}
+
+
+二叉树用数组来存储
+{{./pasted_image005.png}}
+
+
+二叉堆的插入
+{{./pasted_image006.png}}
+{{./pasted_image007.png}}
+
+
+删除堆顶元素
+{{./pasted_image008.png}}
+{{./pasted_image009.png}}
+
+
+
+

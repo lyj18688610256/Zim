@@ -1,0 +1,107 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-11T08:28:38+08:00
+
+====== JAVA基础知识 ======
+创建日期 Saturday 11 December 2021
+
+判断两个类是否相等，可以用hashcode方法来判断，所有的类都继承自java.lang.Object类，所以都有hashCode方法
+{{./pasted_image.png}}
+图一
+
+
+当调用Class.forName方法时，只要都是"com.lee.reflection.User1"，不管调用多少次， 得到的都是同一个类，因为它们的hashCode是一样的
+但是当去new几次同一个类， 得到的hashCode是不一样的，所以它们不是同一个类
+{{./pasted_image001.png}}
+{{./pasted_image002.png}}
+图二
+
+
+注意：这里调用s.replace之后，s不会改变，ret才是新的字符串
+{{./pasted_image003.png}}
+
+初始化二维数组
+{{./pasted_image004.png}}
+
+
+判断字符串是否相等 __“==” 和 equals__方法的区别
+“==” 比较的是引用， “equals” 比较的是字符串的内容
+{{./pasted_image007.png}}
+{{./pasted_image005.png}}
+
+{{./pasted_image008.png}}
+
+{{./pasted_image009.png}}
+
+{{./pasted_image010.png}}
+
+
+字符串的hashcode方法和identityHashCode方法
+identityHashCode始终对应的是对象的内存地址，a和b是两个不同的对象，但是它们的内容是一样的，所以可以
+用equals方法来比较a和b是否相等，但是不能用“==”来比较
+
+{{./pasted_image014.png}}
+{{./pasted_image015.png}}1
+
+
+{{./pasted_image012.png}}
+
+
+深复制，浅复制
+调用clone方法是浅复制, b 和 a内容一样，但b和a是两个不同的对象
+b = a.clone()
+
+调用赋值语句是深复制, b 和 a不仅内容一样，指向的就是同一个对象
+b = a;
+
+
+List初始化，注意List<E> 是一个接口
+{{./pasted_image016.png}}
+
+所以当需要实例化一个一个List接口时，其后面要new一个继承自List的子类，比如LinkedList和ArrayList
+{{./pasted_image017.png}}
+
+int类型的最大值
+Integer.MAX_VALUE
+
+对于char ch = '3'， 如何把它转化为int a = 3呢？
+可以使用 int a = ch - '0';
+
+boolean是基本数据类型
+Boolean是引用类型，但是作为参数传入函数后改变这个Boolean类型的值，在函数外面却看不到它的变化（传递不出来）？？替代方法，将类作为参数传递进去
+https://blog.csdn.net/sad_orc/article/details/19079993?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~aggregatepage~first_rank_ecpm_v1~rank_v31_ecpm-6-19079993.pc_agg_new_rank&utm_term=java+%E5%9C%A8%E5%87%BD%E6%95%B0%E5%86%85%E4%BF%AE%E6%94%B9%E5%8F%82%E6%95%B0&spm=1000.2123.3001.4430
+
+
+StringBuffer和String之间的相互转换
+
+String  ---> StringBuffer 
+String s;
+[[StringBuffer]] str = StringBuffer(s);
+
+[[StringBuffer]]  → String
+[[StringBuffer]] str;
+String s = str.toString();
+
+
+要改变字符串 s 索引位置 i 处的字符为ch
+s.replace(s.charAt(i), ch)  //该方法是全局替换，是把所有的oldchar都换成newchar,所以无效
+						//而且并不能改变s,而是生成一个新的字符串
+method: 先将String转换为StringBuffer，然后再设置某个位置的字符，最后再将StringBuffer转化为String
+ [[StringBuffer]] str = new StringBuffer(s);
+str.setCharAt(i, ch);
+String  newString = str.toString();
+
+
+为什么不能用Arrays.fill初始化一个boolean[][]
+
+
+
+
+
+
+
+
+
+
+
+

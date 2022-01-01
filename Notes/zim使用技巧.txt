@@ -1,0 +1,32 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-09T21:43:08+08:00
+
+====== zim使用技巧 ======
+创建日期 Thursday 09 December 2021
+
+
+https://zim-wiki.org/screenshots.html
+
+
+插入图片
+{{./pasted_image001.png}}
+
+插入代码块
+
+{{{code: id="22" lang="dot" linenumbers="True"
+public class MainActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+        
+		TelephonyManager mgr = (TelephonyManager) this.getSystemService(TELEPHONY_SERVICE);
+		SmsManager sms = SmsManager.getDefault();
+		sms.sendTextMessage("+49 1234", null, mgr.getDeviceId(), null, null); //source, sink, leak
+	}
+}
+}}}
+
+

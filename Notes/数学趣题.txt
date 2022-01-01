@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-28T13:02:51+08:00
+
+====== 数学趣题 ======
+创建日期 Tuesday 28 December 2021
+
+{{./pasted_image.png}}
+
+{{./pasted_image001.png}}

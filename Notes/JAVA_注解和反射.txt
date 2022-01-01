@@ -1,0 +1,46 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-10T20:44:10+08:00
+
+====== JAVA 注解和反射 ======
+创建日期 Friday 10 December 2021
+
+{{./pasted_image.png}}
+
+
+{{./pasted_image001.png}}
+
+
+{{./pasted_image002.png}}
+
+
+{{./pasted_image003.png}}
+
+
+{{./pasted_image004.png}}
+
+{{./pasted_image005.png}}
+上图中可以看出： 反射方式和正常方式是完全反过来的（这就是“反”字的来历）
+
+{{./pasted_image007.png}}
+
+
+{{./pasted_image008.png}}
+
+
+{{./pasted_image009.png}}
+{{./pasted_image010.png}}
+
+注意：这里的Class.forName的Class是大写，
+Class__<?>__ aClass = Class.forName("test.User");
+而且上面的高亮<?>部分可以删除掉，形成如下
+Class  aClass = Class.forName("test.User");
+
+
+
+
+
+
+
+
+

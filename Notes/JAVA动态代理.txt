@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-25T12:41:47+08:00
+
+====== JAVA动态代理 ======
+创建日期 Saturday 25 December 2021
+
+https://www.liaoxuefeng.com/wiki/1252599548343744/1264804593397984
+
+https://blog.csdn.net/u014338530/article/details/88779017
+
+https://www.cnblogs.com/fsmly/p/11031395.html
+
+动态代理实际上是JVM在运行期动态创建class字节码并加载的过程
+
+{{./pasted_image.png}}
+
+
+
+

@@ -1,0 +1,30 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-09T14:04:11+08:00
+
+====== ToDoList ======
+创建日期 Thursday 09 December 2021
+
+1.zim给文字上色,熟悉zim的各种用法,zim插入TaskList, journal Page
+2.能够在ubuntu18.04上安装两个桌面，一个是它之前的桌面，一个是KDE
+3.VScode
+4.新建桌面快捷方式
+5.安装Latex
+6.zim云端备份
+
+12/14/21
+1.如何一次性分析DroidBench所有的例子
+2.要从java转为c或者c++
+
+12/27/21
+1.找到用git方法能上传单个指定的新生成的文件，这个文件可能是之前没有本地没有的
+2.询问gfour怎么样才能得到reflection的结果，或者clue to find for
+3.把zim整个文档上传到gitee上
+4.把droidbench运行整个程序得到一次性得到结果可视化整合到./ldoop --help中
+
+12/28/21
+装虚拟机来打印，暂时ubuntu不能打印，因为Brother MFC 7880DN没有linux驱动
+
+
+
+

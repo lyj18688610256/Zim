@@ -1,0 +1,40 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-30T12:31:06+08:00
+
+====== DOOP 反射 ======
+创建日期 Thursday 30 December 2021
+
+{{./pasted_image003.png}}
+{{./pasted_image001.png}}
+{{./pasted_image.png}}
+
+{{./pasted_image005.png}}
+{{./pasted_image004.png}}
+
+{{./pasted_image007.png}}
+{{./pasted_image006.png}}
+
+{{./pasted_image009.png}}
+{{./pasted_image008.png}}
+
+{{./pasted_image010.png}}
+注意下图中的最下面的一个与ReifiedMethod之间的区别
+{{./pasted_image011.png}}
+
+{{./pasted_image014.png}}
+不明白在Refl1例子中为什么会有在invoke到getDescription的结果？
+{{./pasted_image012.png}}
+
+{{./pasted_image015.png}}
+{{./pasted_image013.png}}
+
+
+{{./pasted_image018.png}}
+結果如下： rc ----->  __<reflective Class.newInstance/new securibench.micro.reflection.Refl3$ReflectivelyCreated>__
+{{./pasted_image016.png}}
+
+{{./pasted_image019.png}}
+
+
+

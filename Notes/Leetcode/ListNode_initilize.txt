@@ -1,0 +1,60 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-09T14:10:56+08:00
+
+====== ListNode initilize ======
+创建日期 Thursday 09 December 2021
+
+如下为初始化ListNode代码，''这里创建了一个initList的静态方法''，用于返回初始化后的ListNode
+note:这里有1，2处两个语法糖
+		   ？？如果要初始化两个ListNode,怎么办？是否改成非静态方法好点？
+{{./pasted_image001.png}}
+图一
+
+{{./pasted_image.png}}
+图二
+
+
+因为在leetcode中已经规定了ListNode的数据如图三，所以我不能修改ListNode的结构，于是我写了一个ListNode的初始化类initilListNode如图四，
+需要初始化的时候就调用initilListNode
+{{./pasted_image002.png}}
+图三
+
+图四中的current就相当于tail指针
+{{./pasted_image003.png}}
+图四
+
+
+但是在Leetcode的官方教程中是这样写的
+{{./pasted_image004.png}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

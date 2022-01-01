@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-20T22:08:00+08:00
+
+====== JAVA泛型 ======
+创建日期 Monday 20 December 2021
+
+https://segmentfault.com/a/1190000014120746
+
+{{./pasted_image007.png}}
+
+{{./pasted_image008.png}}
+
+{{./pasted_image009.png}}
+
+{{./pasted_image010.png}}
+

@@ -1,0 +1,49 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-10T16:54:11+08:00
+
+====== 基础知识 ======
+创建日期 Friday 10 December 2021
+
+char转化为String:   String.valueOf(char c)
+char初始化为空 char ch = ' '
+
+字符串A中包含字符串B:    A.contains(B)
+
+"回文串”是一个正读和反读都一样的字符串，比如“level”或者“noon”等等就是回文串
+
+正则表达式
+* '.' 匹配任意单个字符
+* '*' 匹配零个或多个前面的那一个元素
+".*" 表示可匹配零个或多个（'*'）任意字符（'.'）（也就是可以匹配任意长度的任意字符串）
+
+回文字符串要分两种情况讨论
+1. abba
+2. aba
+
+以下是二叉树的结构，其中第一个输出对应的是pic2
+__注意：输出是按照层序遍历的结果来输出的__
+{{./pasted_image002.png}}
+
+
+List<Integer>[] g = new List[n];
+上式是说g 是数组类型，其中每个元素是List<Integer>类型
+
+Arrays.fill(ans, -1); 
+上式将ans数组的每个元素都赋值为-1
+
+java中数组是引用类型，所以，当作为参数传递时，若在方法内部改变了
+它的值，那么在外部也可以看到它的值的改变
+
+在java.util.Arrays下有个静态方法binarySearch可以实现二分查找
+{{./pasted_image003.png}}
+
+在二分查找的时候，一定要注意索引可能超出边界的情况，比如下图中
+mid = i +(j-i)/2 不要写成 mid = (i + j)/2
+{{./pasted_image004.png}}
+
+
+
+
+
+

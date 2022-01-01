@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-14T15:27:31+08:00
+
+====== Ubuntu问题汇总 ======
+创建日期 Tuesday 14 December 2021
+
+1.今天在操作sublime text时，电脑突然死机，按下CapsLock按键，大小写指示灯也不会亮，按下ctrl+alt+F7/8也没反应，等了大概四五分钟就恢复正常了
+
+12/16/21
+今天在操作idea时突然电脑死机，按下CapsLock按键，大小写指示灯也不会亮，按下ctrl+alt+F7/8也没反应，等了几分钟也没反应，然后
+按下ctrl+alt+printscreen ,再依次按下reisub，每个按键大概持续1s钟

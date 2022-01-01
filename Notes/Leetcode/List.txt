@@ -1,0 +1,44 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-19T12:31:17+08:00
+
+====== List ======
+创建日期 Sunday 19 December 2021
+
+如果要将存储下图中的数据，并可以按序号取出下面的数据
+可以使用
+List<int[]> list = new ArrayList<>();
+	for (int i = 0; i < trust.length; i++) {
+		list.add(new int[]{trust[i][0], trust[i][1]});
+}
+{{./pasted_image.png}}
+
+
+判断两个不同的list中的内容是否相同可以使用equals方法
+比如下面，会输出yes
+List<Integer> list = new ArrayList<>();
+		List<Integer> list1 = new ArrayList<>();
+		list.add(1);
+		list.add(2);
+		list.add(3);
+		list1.add(1);
+		list1.add(2);
+		list1.add(3);
+		if (list.equals(list1))
+			System.out.println("yes");
+		else
+			System.out.println("no");
+
+再比如下面，会输出no
+List<Integer> list = new ArrayList<>();
+		List<Integer> list1 = new ArrayList<>();
+		list.add(1);
+		list.add(2);
+		list.add(3);
+		list1.add(1);
+		list1.add(2);
+		list1.add(3);
+		if (list.equals(list1))
+			System.out.println("yes");
+		else
+			System.out.println("no");

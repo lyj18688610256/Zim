@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-12T09:11:13+08:00
+
+====== 计算机基础知识 ======
+创建日期 Sunday 12 December 2021
+
+markdown是一种标记语言，比如用在github上写readme
+{{./pasted_image.png}}
+
+
+什么是打表
+{{./pasted_image001.png}}
+
+Kaisen  Linux
+{{./pasted_image002.png}}
+{{./pasted_image003.png}}
+

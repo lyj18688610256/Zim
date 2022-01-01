@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-15T16:08:32+08:00
+
+====== lamda表达式 ======
+创建日期 Wednesday 15 December 2021
+
+{{./pasted_image004.png}}
+{{./pasted_image001.png}}
+{{./pasted_image002.png}}
+
+{{./pasted_image003.png}}
+
+
+
+

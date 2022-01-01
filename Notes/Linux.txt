@@ -1,0 +1,41 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-12-14T16:27:43+08:00
+
+====== Linux ======
+创建日期 Tuesday 14 December 2021
+
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+{{./pasted_image002.png}}
+
+
+看各个目录系统的使用情况            df -h
+看某个文件夹挂载在哪个目录下  df -h 文件夹
+{{./pasted_image003.png}}
+
+
+{{./pasted_image004.png}}
+
+git diff 文件名
+查看文件中有哪些地方发生了更改
+{{./pasted_image005.png}}
+
+12/19/21
+今天出现网易云音乐没反应，关不掉，也不放歌曲，想kill掉该进程，但是找不到该进程的名字
+因为该应用是中文名，搜索不到，于是在应用中找到“网易云音乐”的详细信息
+{{./pasted_image006.png}}
+
+从上图可以看到，也许它的名字就是Netease，所以就使用指令查找，然后再kill该进程就可以了
+{{./pasted_image007.png}}
+
+ps -ef可以和grep指令配合使用，查找相关进程的信息
+{{./pasted_image009.png}}
+
+当文件名中间有空格时，要用单引号将其引起来
+{{./pasted_image010.png}}
+
+
+
+
+
