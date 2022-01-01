@@ -9,3 +9,6 @@ Creation-Date: 2021-12-21T14:41:54+08:00
 http://192.168.11.67/
 
 打印机驱动 192.168.1.100：80
+
+在/etc/hosts文件中更新github网址之后，要想生效还要刷新dns缓存
+{{./pasted_image.png}}
