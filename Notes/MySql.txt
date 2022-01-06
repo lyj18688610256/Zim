@@ -1,0 +1,57 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-01-03T21:41:48+08:00
+
+====== MySql ======
+创建日期 Monday 03 January 2022
+
+mysql 5.6.44 [[%E5%AE%89%E8%A3%85%E4%B8%8E%E8%AE%BE%E7%BD%AEhttps://www.bilibili.com/video/BV1mJ411z7GZ?p=5]]
+{{./pasted_image001.png}}
+{{./pasted_image.png}}
+按照上面的步骤安装的时候报错如下，是由于缺少依赖库
+{{./pasted_image007.png}}
+SQL 特性
+{{./pasted_image002.png}}
+
+[[%E6%95%B0%E6%8D%AE%E5%BA%93%E6%95%99%E7%A8%8Bhttps://www.runoob.com/mysql/mysql-like-clause.html]]
+
+操作数据库的时候一定要注意输入法，因为sql语句规定每一句后面必须跟上一个分号，必须用英文输入法
+数据库链接 注意：必须是 [[./bin/mysql]] 而不是  [[/bin/mysql，]] 因为如果是 /bin/mysql的话，它会去根目录下去查找，而不是在当前文件夹下bin文件中的可执行文件mysql
+{{./pasted_image004.png}}
+用软连接的方式在/usr/bin建立了快捷方式mysql,这样就相当于建立了环境变量，在任意地方都可以使用 mysql -uroot -p来启动mysql了
+{{./pasted_image005.png}}
+第一次连接成功之后，用命令行操作数据库
+create database lee; (错误)  （不知道原因）
+create database lyj; (错误) （不知道原因）
+create database test1; (正确)
+create database hubei; (正确)
+{{./pasted_image003.png}}
+
+退出数据库用exit
+
+{{./pasted_image008.png}}
+
+当我们在sql server命令行中输入上图的指令，出现的 ->是换行标识符（一行装不下，太长）
+{{./pasted_image009.png}}
+{{./pasted_image010.png}}
+
+用可视化软件（Navicat16）作为mysql服务器的客户端来管理数据库,连接配置如下
+{{./pasted_image006.png}}
+
+SQL注入
+{{./pasted_image011.png}}
+
+将$name替换掉，查询语句就变成
+select * from users where name = Qadir'; delete from users;
+这样会将users表中的所有的数据全部删除
+
+
+{{./pasted_image012.png}}
+
+
+
+
+
+
+
+

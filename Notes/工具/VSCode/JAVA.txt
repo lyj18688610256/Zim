@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-01-05T21:41:42+08:00
+
+====== JAVA ======
+创建日期 Wednesday 05 January 2022
+
+新建一个JAVA工程
+1.新建一个文件夹，比如JAVA
+2.File --OpenFolder，选中JAVA这个文件夹
+3.ctrl+shift+P,在command palette中输入create Java Project

@@ -16,3 +16,9 @@ Kaisen  Linux
 {{./pasted_image002.png}}
 {{./pasted_image003.png}}
 
+{{./pasted_image004.png}}
+{{./pasted_image005.png}}
+大小端是面向多字节类型定义的，比如2字节、4字节、8字节整型、长整型、浮点型等，单字节的字符串一般不用考虑
+我们常用的X86结构是小端模式
+https://blog.csdn.net/anningzte/article/details/52125665
+

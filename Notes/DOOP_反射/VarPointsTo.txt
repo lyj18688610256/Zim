@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-01-01T19:41:08+08:00
+
+====== VarPointsTo ======
+创建日期 Saturday 01 January 2022
+

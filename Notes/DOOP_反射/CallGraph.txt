@@ -1,0 +1,46 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-01-01T19:41:20+08:00
+
+====== CallGraph ======
+创建日期 Saturday 01 January 2022
+
+forName方法
+{{./pasted_image.png}}
+
+{{./pasted_image005.png}}
+{{./pasted_image003.png}}
+{{./pasted_image006.png}}
+{{./pasted_image004.png}}
+
+Class c1= Class.forName("com.lee.reflection.User1"). 下图反应的是c1所指向的heapValue，而这个heapValue是新生成的
+{{./pasted_image002.png}}
+图一
+
+由下面的结果可以知道，对于ReifiedClass（？type， ？classHeap），这里的type既可能是ClassHeap_InstanceType(?classHeap, ?type)中的type提供的
+也可能是!TypeHasHeap(?type)中的type提供的（它们本身没有meta object,是人为创造的）
+{{./pasted_image007.png}}
+如果调用比如 Class c1 = User1.class，那么肯定是有这个meta-object的，因为在编译阶段如果不存在User1这个类，这里就会报错
+{{./pasted_image009.png}}
+下图是没有meta-object的，人为的去创造一个
+{{./pasted_image008.png}}
+cat mainAnalysis.ReifiedClass.csv |grep -i 'Refl' 的部分结果如下，框1中应该对应的是有meta-object的，框2中的应该对应的没有meta-object的
+{{./pasted_image010.png}}
+
+
+这里由SpecialMissingNewInstanceValue产生的VarPointsTo的关系有什么作用？图二中的VarPointsTo是为了产生一个默认的值，占位符,图一中产生的是真实Class Object
+{{./pasted_image017.png}}
+{{./pasted_image012.png}}
+图二
+
+{{./pasted_image013.png}}
+
+
+{{./pasted_image014.png}}
+
+
+{{./pasted_image015.png}}
+
+
+{{./pasted_image016.png}}
+

@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-01-05T22:41:10+08:00
+
+====== SQL ======
+创建日期 Wednesday 05 January 2022
+
+先要安装mysql插件，mysql是跨平台的（不要安装mssql，这个是微软，只支持windows）
+{{./pasted_image.png}}
+依次按下1和2,在command palette中依次提示你输入host（127.0.0.1）, username(root)，password，
+{{./pasted_image001.png}}u
+
+然后有以下界面表示链接数据库成功
+{{./pasted_image002.png}}
+
+写一个SQL查询语句，然后点击右建，run mysql query，生成如下结果
+{{./pasted_image003.png}}
+{{./pasted_image004.png}}
+
+在搜索mysql时候，可以下载相应的语法高亮和智能补全，这样在写SQL语句时就不容易出错
+{{./pasted_image005.png}}
+
+
+
+

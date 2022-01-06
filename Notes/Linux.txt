@@ -35,6 +35,58 @@ ps -ef可以和grep指令配合使用，查找相关进程的信息
 当文件名中间有空格时，要用单引号将其引起来
 {{./pasted_image010.png}}
 
+为了创建快捷方式，可以使用 ln -s 源文件夹  快捷方式名（例如 ln -s lyj/lee a ）
+{{./pasted_image011.png}}
+
+注意：这里的变量声明前面不用加上$符号，且 =前后都不能加上空格
+			   下面的脚本的功能是当在IDEA中修改了securibench的代码之后，运行桌面的这个脚本就会自动生成新的securibench.jar文件，并且也可以指定修改main入口
+{{./pasted_image012.png}}
+
+统计一个文本中的行数
+{{./pasted_image013.png}}
+
+[[./test.sh 和]] test.sh的区别 
+{{./pasted_image014.png}}
+
+shell脚本编程
+{{./pasted_image016.png}}
+
+{{./pasted_image018.png}}
+
+{{./pasted_image019.png}}
+{{./pasted_image021.png}}
+
+目前测试在ubuntu能用的for循环的模式：
+{{./pasted_image023.png}}
+{{./pasted_image024.png}}
+{{./pasted_image025.png}}
+
+
+在这里判断相等用-eq(发现用 == 编译通不过，不知道什么原因)
+{{./pasted_image027.png}}
+
+从文件a选取第5行的内容输出 -p(打印出来) -n或--quiet或--silent 仅显示script处理后的结果。
+{{./pasted_image028.png}}
+
+将文件a中第2行到第5行输出
+{{./pasted_image029.png}}
+
+{{./pasted_image030.png}}
+
+查看软件的依赖项
+{{./pasted_image033.png}}
+卸载软件
+{{./pasted_image031.png}}
+{{./pasted_image032.png}}
+
+解压tar.gz包用tar -zxf指令
+
+
+
+
+
+
+
 
 
 

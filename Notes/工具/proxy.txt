@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-01-06T09:59:35+08:00
+
+====== proxy ======
+创建日期 Thursday 06 January 2022
+
+设置代理，能用命令行下载国外软件更快，或者使用github下载上传更快，但是不能影响国内网站的访问速度？？
+
+今天发现一个怪事，ping不通github（把/etc/hosts中的代理都屏蔽掉）,但是能够从github上下载东西？？
+
+这里的系统代理和proxy是有区别的，系统代理是通过客户端软件qv2ray来转发chrome浏览器流量的（chrome如何和qv2ray联系起来的？？）
+而proxy中要设置代理如图二
+{{./pasted_image001.png}}
+图一
+{{./pasted_image004.png}}
+图二（chrome中SwitchyOmega的proxy设置）[127.0.0.1(ipv4)和 [::1](ipv6)]
+
+

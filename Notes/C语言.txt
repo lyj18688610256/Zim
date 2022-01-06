@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-01-02T17:04:03+08:00
+
+====== C语言 ======
+创建日期 Sunday 02 January 2022
+
+{{./pasted_image.png}}
+{{./pasted_image001.png}}

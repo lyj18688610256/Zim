@@ -1,0 +1,67 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-01-04T20:44:02+08:00
+
+====== VSCode ======
+创建日期 Tuesday 04 January 2022
+
+{{./pasted_image.png}}
+
+VSCode JAVA环境配置和安装（我并没有在VScode中再配置JAVA环境，我的电脑上已经安装好了java环境）
+https://blog.csdn.net/weixin_40448140/article/details/105904836
+
+F5进入调试模式，F10单步调试， F5从一个断点进入到下一个断点
+{{./pasted_image001.png}}
+图一
+
+图一新建文件的方式实际上有问题的（File → new File），用这种方式新建的文件可以看到public上有个报警的 ~ 号，是因为建文件不规范引起的
+__标准方法__ctrl+shift+P(打开command palette),然后输入create java project,然后输入项目名就可以了，这样就不会报警了
+
+{{./pasted_image002.png}}
+
+在vscode中如果想隐藏2处，可以双击 1 处
+{{./pasted_image004.png}}
+
+VScode中配置C环境 
+https://blog.csdn.net/weixin_45882303/article/details/105282492
+https://blog.csdn.net/qq_37968132/article/details/79685646
+
+重新设置了运行和调试代码的快捷键（这样我不看键盘就可以调试程序了），下面的快捷键对所有的程序都是有效果的（JAVA, C，C++等）
+运行代码ctrl + esc
+开始调试代码（和运行到下一个断点continue）ctrl+ ~
+单步运行ctrl+1
+结束调试ctrl+2
+结束程序的运行ctrl+3
+
+并设置了C和C++程序自定义模版（可修改），只用新建一个文件（.c或者.cpp）,然后打上c(或者c++),
+然后按enter就可以直接生成整个自定义模版
+
+
+
+可以把多个项目都放在workspace这里，随时方便切换，在workspace中点击右键，选择Add folder to workspace
+{{./pasted_image005.png}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

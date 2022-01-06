@@ -95,6 +95,15 @@ String  newString = str.toString();
 为什么不能用Arrays.fill初始化一个boolean[][]
 
 
+常量池
+{{./pasted_image019.png}}
+{{./pasted_image020.png}}
+
+
+{{./pasted_image021.png}}
+
+{{./pasted_image022.png}}
+{{./pasted_image023.png}}
 
 
 

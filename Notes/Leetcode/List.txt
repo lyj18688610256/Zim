@@ -42,3 +42,13 @@ List<Integer> list = new ArrayList<>();
 			System.out.println("yes");
 		else
 			System.out.println("no");
+			
+list的排序
+{{./pasted_image001.png}}
+
+当listnode为空节点是null,而不是new Listnode();
+{{./pasted_image002.png}}
+
+返回list某两个索引之间的部分， List.subList(index1, index2)
+{{./pasted_image003.png}}
+

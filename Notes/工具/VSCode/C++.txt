@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-01-05T20:28:01+08:00
+
+====== C++ ======
+创建日期 Wednesday 05 January 2022
+
+创建c++自定义模版
+https://zhuanlan.zhihu.com/p/100504877?hmsr=toutiao.io
+{{./pasted_image002.png}}
+{{./pasted_image001.png}}
+
+C++新建一个项目类似于C(请看VSCode/C)

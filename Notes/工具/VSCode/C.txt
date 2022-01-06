@@ -1,0 +1,36 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-01-05T09:30:51+08:00
+
+====== C ======
+创建日期 Wednesday 05 January 2022
+
+{{./pasted_image.png}}
+
+{{./pasted_image001.png}}
+
+01/05/22
+创建c自定义模版（参考C++）
+https://zhuanlan.zhihu.com/p/100504877?hmsr=toutiao.io
+{{./pasted_image002.png}}
+{{./pasted_image003.png}}
+
+新建一个C 程序：(C++与此相似)
+1.打开一个文件夹，比如文件夹C
+2.新建一个.C文件
+{{./pasted_image004.png}}
+{{./pasted_image006.png}}3
+3.在test.c中输入代码（我已经设置好自定义代码模版，直接输入C就好）
+4.先ctrl+ esc,看是否能够运行
+5.再crtl+  ~  看是否能够debug
+{{./pasted_image007.png}}
+{{./pasted_image008.png}}
+然后发现可以调试了
+{{./pasted_image009.png}}
+
+如果发现下图中不能自动滚动，按快捷键ctrl+ end按键，可以恢复自动滚动
+{{./pasted_image010.png}}
+
+
+
+

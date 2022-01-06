@@ -14,3 +14,8 @@ if( a.equals(b) )
 
 {{./pasted_image001.png}}
 
+为了隔绝String在dfs中作为传递会对for循环的下一个 j 的影响，这里使用了StringBuffer隔离
+{{./pasted_image003.png}}
+
+
+
