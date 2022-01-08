@@ -1,0 +1,83 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-01-08T16:36:55+08:00
+
+====== 程序分析会议 ======
+创建日期 Saturday 08 January 2022
+
+{{./pasted_image.png}}
+
+{{./pasted_image001.png}}
+
+{{./pasted_image002.png}}
+
+
+{{./pasted_image004.png}}
+
+
+{{./pasted_image012.png}}
+
+{{./pasted_image007.png}}
+{{./pasted_image006.png}}
+
+{{./pasted_image011.png}}
+
+所有的目标都是为了类型解析
+求ClassObject（i，t）是最终的目标， 因为如果能解析如上图的clazz的type，就能得到与之相关的Callgraph
+{{./pasted_image010.png}}
+还有其他的方法，比如back-propagation（后向传递）或者forward-propagation(前向传递)可以得到ClassObject(i, t).
+{{./pasted_image014.png}}
+
+{{./pasted_image002.png}}
+{{./pasted_image011001.png}}
+这里的r指代的是上图中的line2 ： c，下图中的h指的是上图中的第一行
+{{./pasted_image013.png}}
+
+{{./pasted_image015.png}}
+{{./pasted_image017.png}}
+{{./pasted_image016.png}}
+
+
+Substring Analysis
+{{./pasted_image019.png}}
+
+{{./pasted_image020.png}}
+
+
+
+{{./pasted_image022.png}}
+
+[[StringBuffer]] vf = new StringBuffer();
+ia :  vf.append(v)
+........
+it:  r = uf.toString();
+{{./pasted_image023.png}}
+下图中的ReflectionObject（h）是经过将 v 与程序中所有的class method field进行比对所产生的ReflectionObj的h
+最终r指向h（这里的逻辑跟PTaint很像）
+{{./pasted_image021.png}}
+
+{{./pasted_image024.png}}
+
+
+
+{{./pasted_image027.png}}
+
+通过cast类型推断
+{{./pasted_image025.png}}
+
+{{./pasted_image028.png}}
+{{./pasted_image029.png}}
+v' = (t)v
+{{./pasted_image030.png}}
+
+通过feildName与className是否有从属关系来推断，因为有fieldName的类可能不止一个
+{{./pasted_image031.png}}
+
+
+{{./pasted_image032.png}}
+这里主要的目标是生成e的regular heapValue而关心c1的类型
+{{./pasted_image034.png}}
+
+{{./pasted_image033.png}}
+
+
