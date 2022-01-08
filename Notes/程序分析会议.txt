@@ -79,5 +79,21 @@ v' = (t)v
 {{./pasted_image034.png}}
 
 {{./pasted_image033.png}}
+下图中的h是special object
+{{./pasted_image035.png}}
+下图中的h是regular object（下图中的r对应的line5： e， t： Event,  v: o2）
+{{./pasted_image036.png}}
+{{./pasted_image037.png}}
+
+{{./pasted_image038.png}}
+back-propagation:  sound over-approximate(not precious)
+forward-propagation:  more precious, not sound
+
+{{./pasted_image039.png}}
+
+{{./pasted_image040.png}}
+
+
+{{./pasted_image041.png}}
 
 
