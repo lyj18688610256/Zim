@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-01-07T14:59:35+08:00
+
+====== markdown ======
+创建日期 Friday 07 January 2022
+
+做笔记可以在vscode中用Markdown来写
+安装 paste image插件，并安装xclip命令工具
+{{./pasted_image002.png}}
+
+用markdown控制无人机
+https://www.zhihu.com/question/266836039
+
+

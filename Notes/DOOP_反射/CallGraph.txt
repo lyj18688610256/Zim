@@ -44,3 +44,7 @@ cat mainAnalysis.ReifiedClass.csv |grep -i 'Refl' 的部分结果如下，框1�
 
 {{./pasted_image016.png}}
 
+当调用下述指令时，即使aliasing中没有反射，它也会生成相应的ReifiedMethod(所以并不是只有反射的时候才有)
+{{./pasted_image021.png}}
+{{./pasted_image019.png}}
+
