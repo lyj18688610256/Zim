@@ -11,6 +11,27 @@ Creation-Date: 2022-01-08T16:36:55+08:00
 
 {{./pasted_image002.png}}
 
+比如说类A 中调用了方法类B中的方法methodB(var a)，如果要解析如下图
+class A{
+	void main(){
+		 ClassC c = new ClassC();
+			   methodB(c);
+	}
+  
+}
+class B{
+  void main(){
+	 ClassFC d = new ClassC();
+	   d.set();    //d到底是ClassC类型，还是ClassFC类型内，这个时候需要解析d的类型，那么就必须使用到VarPointsTo
+	}                     // HeapAllocation_Type(?heap, ?heaptype),
+					  // VarPointsTo(?heap, ?from)
+	void methodB(Class cc){
+		d = cc;
+   }
+}
+
+[[ClassFC]]  extends ClassC{
+}
 
 {{./pasted_image004.png}}
 
@@ -24,8 +45,11 @@ Creation-Date: 2022-01-08T16:36:55+08:00
 
 所有的目标都是为了类型解析
 求ClassObject（i，t）是最终的目标， 因为如果能解析如上图的clazz的type，就能得到与之相关的Callgraph
+这里的关键是ConstantForClass(c, t).这里的c是heapValue，但是t是这个c这个heapvalue提取出来的字符串，但是这个字符串不一定是
+package + class name的组合，也就是可能是个未知的string constant,所以需要与ReifiedClass进行对比（ReifiedClass是inputRelation，它
+是将程序中所有的package + class name 组合在一起），如果在ReifiedClass中存在，name就让r指向h(h类似<class securibench.micro.reflection.Refl1>) ,它是一个special object，不是regular object
 {{./pasted_image010.png}}
-还有其他的方法，比如back-propagation（后向传递）或者forward-propagation(前向传递)可以得到ClassObject(i, t).
+还有其他的方法，比如back-propagation（后向传递）也可以得到ClassObject(i, t) 【但原理不一样】
 {{./pasted_image014.png}}
 
 {{./pasted_image002.png}}
@@ -62,6 +86,8 @@ it:  r = uf.toString();
 
 {{./pasted_image027.png}}
 
+之所以叫back-propagation是因为通过推断知道，c1的类型是Event的子类型（这个是一个往后向前的传递过程）然后c1的类型又可以向后传递给更多的地方，比如
+c2， o1, o2 ....
 通过cast类型推断
 {{./pasted_image025.png}}
 
@@ -74,6 +100,7 @@ v' = (t)v
 {{./pasted_image031.png}}
 
 
+之所以叫前向传递，是在如下图line: 5的地方产生了e的regular object（不是special object），已经跟前面没有什么关系了，只用保持向后传递就好了
 {{./pasted_image032.png}}
 这里主要的目标是生成e的regular heapValue而关心c1的类型
 {{./pasted_image034.png}}

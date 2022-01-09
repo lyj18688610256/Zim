@@ -106,6 +106,8 @@ String  newString = str.toString();
 {{./pasted_image023.png}}
 
 
+String str = Integer.toBinaryString(n) 将十进制数转换为二进制数字符串
+
 
 
 
