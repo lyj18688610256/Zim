@@ -58,6 +58,12 @@ BaseToRetTaintTransferMethod("<java.lang.StringBuilder: java.lang.String toStrin
 
 
 
+--------------------
+Doop基础知识
+Method_DeclaringType(?method, ?class) 用来表示一个method和一个class之间的关系
+{{./pasted_image004.png}}
+
+
 
 
 
