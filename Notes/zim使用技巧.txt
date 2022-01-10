@@ -30,3 +30,4 @@ public class MainActivity extends Activity {
 }}}
 
 
+可以将整个wiki导出成md格式，可以在vscode中查看编辑，太方便了

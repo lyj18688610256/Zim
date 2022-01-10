@@ -41,10 +41,15 @@ https://blog.csdn.net/qq_37968132/article/details/79685646
 可以把多个项目都放在workspace这里，随时方便切换，在workspace中点击右键，选择Add folder to workspace
 {{./pasted_image005.png}}
 
+下载了vscode-icons插件，却没有生效，是要在ctrl+shift +p 输入icons
+然后active vscode icons
+
+当发现某些插件不能生效时，最好的办法是查看那个插件的官方文档说明，就在软件市场看就好了
+{{./pasted_image006.png}}
 
 
-
-
+在vscode中使用github
+https://code.visualstudio.com/docs/editor/github
 
 
 

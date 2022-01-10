@@ -16,4 +16,8 @@ Creation-Date: 2022-01-06T09:59:35+08:00
 {{./pasted_image004.png}}
 图二（chrome中SwitchyOmega的proxy设置）[127.0.0.1(ipv4)和 [::1](ipv6)]
 
+01/09/22
+今天发现没开V2ray时，VSCode不能搜索和下载插件，应该是VScode中的插件都是要使用系统代理才能使用
+
+
 
