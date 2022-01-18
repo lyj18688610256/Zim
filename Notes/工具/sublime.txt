@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-01-12T10:32:06+08:00
+
+====== sublime ======
+创建日期 Wednesday 12 January 2022
+
+sublime中用正则搜索时，遇到（需要转义  \(
+{{./pasted_image.png}}
+{{./pasted_image001.png}}

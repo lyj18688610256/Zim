@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-01-11T20:41:07+08:00
+
+====== DarkReader ======
+创建日期 Tuesday 11 January 2022
+
+将对比度调节为0，视觉效果如下，眼睛不刺眼
+
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+

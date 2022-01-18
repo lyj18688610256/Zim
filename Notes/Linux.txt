@@ -81,6 +81,7 @@ shell脚本编程
 
 解压tar.gz包用tar -zxf指令
 
+pkill -9 command
 
 
 

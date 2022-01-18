@@ -108,6 +108,16 @@ String  newString = str.toString();
 
 String str = Integer.toBinaryString(n) 将十进制数转换为二进制数字符串
 
+java中的 <init>和<clinit>
+{{./pasted_image024.png}}
+{{./pasted_image025.png}}
+
+
+{{./pasted_image026.png}}
+
+javap指令用于查看class文件使用什么版本的java编译的
+{{./pasted_image027.png}}
+
 
 
 

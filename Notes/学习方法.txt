@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-01-12T09:49:35+08:00
+
+====== 学习方法 ======
+创建日期 Wednesday 12 January 2022
+
+减少unmotivated behavior
+https://austinhenley.com/blog/lessonsfrommyphd.html?continueFlag=52aa28131ff95d3fcfe75503d9531ae8

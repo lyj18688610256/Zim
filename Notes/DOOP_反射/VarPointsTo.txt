@@ -5,3 +5,65 @@ Creation-Date: 2022-01-01T19:41:08+08:00
 ====== VarPointsTo ======
 创建日期 Saturday 01 January 2022
 
+01/11/22
+ReflectiveStaticMethodInvocation
+ReflectiveSpecialMethodInvocation
+ReflectiveVirtualMethodInvocation
+
+Var_Type反应的是var和它的类型之间的关系
+{{./pasted_image.png}}
+
+ReflectiveVirtualMethodInvocation
+{{./pasted_image014.png}}
+所以在ReflectiveVirtualMethodInvocation(?signature, ?invocation, ?ctx, ?base)这里的base在Refl1例子中Line56是this
+{{./pasted_image001.png}}
+
+在Refl1的例子中 Line56对id方法的调用，所产生的calleeCtx是immutable
+{{./pasted_image015.png}}
+
+
+{{./pasted_image002.png}}
+
+Value_Type反应的是heapValue与（包名+）类名之间的关系
+{{./pasted_image004.png}}
+
+Method_DeclaringType（signature, type）反应的是方法和（包名+）类名之间的关系
+{{./pasted_image005.png}}
+
+01/17/22
+{{./pasted_image008.png}}
+
+如下的CallGraphEdge并没有起到将Line56的invo到id这个tomethod联系起来的桥梁
+{{./pasted_image009.png}}
+实际上在Refl1例子中是下面的ReflectiveCallGraphEdge起到了作用
+{{./pasted_image023.png}}
+规则如下
+{{./pasted_image024.png}}
+
+{{./pasted_image010.png}}
+在Refl1中  $stack15[0]代表s1, $stack15[1]代表的是writer
+{{./pasted_image012.png}}
+
+{{./pasted_image013.png}}
+
+
+{{./pasted_image017.png}}
+
+
+InvokeArgLoadArrayIndex(?calleeCtx, ?formal, ?callerCtx, ?actual)
+{{./pasted_image019.png}}
+{{./pasted_image020.png}}
+
+ArrayIndexPointsTo(?hctx, ?value, ?basehctx, ?basevalue)
+{{./pasted_image016.png}}
+LoadReflectiveValueArrayIndex(?calleeCtx, ?to, ?basehctx, ?basevalue)
+{{./pasted_image018.png}}
+根据上述规则，我们可以得到id(string, wirter)中第一个形参的VarPointsTo,这里的@parameter0就是第一个形式参数
+{{./pasted_image021.png}}
+第一个参数是TaintedVar,在TaintedVarPointsTo关系中有所体现
+{{./pasted_image022.png}}
+
+综上所述：在Refl1例子中
+ReflectiveCallGraphEdge  - -> InvokeArgLoadArrayIndex  → LoadReflectiveValueArrayIndex  →  VarPointsTo,得到最后的VarPointsTo是var指向了一个TaintedValue
+
+

@@ -51,19 +51,21 @@ BaseToRetTaintTransferMethod("<java.lang.StringBuilder: java.lang.String toStrin
 ./doop --analysis 2-object-sensitive+heap   --input-file securibench.jar  --platform java_8_mini --information-flow webapps  --id web --open-programs servlets-only --information-flow-high-soundness --reflection-classic --reflection-substring-analysis --reflection-speculative-use-based-analysis --regex securibench.micro.reflection.*
 
 当运行下述指令时，可以得到4个正确的结果，这里securibench.jar的main入口是securibench.micro.reflection.Harness（--platform java8 也是OK的）
- ./doop --analysis 2-object-sensitive+heap   --input-file securibench.jar  --platform java_8_mini --information-flow webapps  --id web --information-flow-high-soundness --reflection-classic --reflection-substring-analysis --reflection-speculative-use-based-analysis 
+ ./doop --analysis 2-object-sensitive+heap   --input-file securibench.jar  --platform java_8_mini --information-flow webapps  --id securibench --information-flow-high-soundness --reflection-classic --reflection-substring-analysis --reflection-speculative-use-based-analysis --regex securibench.micro.reflection.*
 
 像分析比如JInfoFlow的结果，因为它每个例子都有main函数入口，所以使用--discover-main-methods函数
 {{./pasted_image003.png}}
-
-
 
 --------------------
 Doop基础知识
 Method_DeclaringType(?method, ?class) 用来表示一个method和一个class之间的关系
 {{./pasted_image004.png}}
 
+{{./pasted_image007.png}}
+{{./pasted_image006.png}}
+这里虽然main函数是securibench.micro.Harness, 但是 如果指定参数__--regex securibench.micro.reflection.Refl1__，那么它也只分析 securibench.micro.reflection.Refl1,而不分析main函数
+可以看到上图中只有Refl1的结果
 
-
-
+01/12/22
+今天发现有个之前打包的securibench.jar不起作用，所以在使用之前要double-check一下
 

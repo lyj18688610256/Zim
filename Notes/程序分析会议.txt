@@ -19,18 +19,21 @@ class A{
 	}
   
 }
+
 class B{
-  void main(){
-	 ClassFC d = new ClassC();
-	   d.set();    //d到底是ClassC类型，还是ClassFC类型内，这个时候需要解析d的类型，那么就必须使用到VarPointsTo
-	}                     // HeapAllocation_Type(?heap, ?heaptype),
-					  // VarPointsTo(?heap, ?from)
+	  void main(){
+		 ClassFC d = new ClassC();
+		   d.set();    //d到底是ClassC类型，还是ClassFC类型内，这个时候需要解析d的类型，那么就必须使用到VarPointsTo
+				   // VarPointsTo(?heap, ?from)
+	   }                            // HeapAllocation_Type(?heap, ?heaptype),
+  
 	void methodB(Class cc){
 		d = cc;
-   }
+		   }
 }
 
 [[ClassFC]]  extends ClassC{
+     
 }
 
 {{./pasted_image004.png}}
