@@ -71,6 +71,11 @@ method#6#_57（s2）
 
 {{./pasted_image029.png}}
 
+在idMethod_$$A_2#_49的VarPointsTo结果可知，它不仅指向id方法还指向getDescription方法
+{{./pasted_image030.png}}
+
+
+
 
 
 
