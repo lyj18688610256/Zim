@@ -8,3 +8,6 @@ Creation-Date: 2022-01-12T10:32:06+08:00
 sublime中用正则搜索时，遇到（需要转义  \(
 {{./pasted_image.png}}
 {{./pasted_image001.png}}
+
+alt+- 上一个编辑处
+alt+shift+- 下一个编辑处

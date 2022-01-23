@@ -33,7 +33,7 @@ Method_DeclaringType（signature, type）反应的是方法和（包名+）类�
 01/17/22
 {{./pasted_image008.png}}
 
-如下的CallGraphEdge并没有起到将Line56的invo到id这个tomethod联系起来的桥梁
+如下的CallGraphEdge__并没有__起到将Line56的invo到id这个tomethod联系起来的桥梁
 {{./pasted_image009.png}}
 实际上在Refl1例子中是下面的ReflectiveCallGraphEdge起到了作用
 {{./pasted_image023.png}}
@@ -65,5 +65,8 @@ LoadReflectiveValueArrayIndex(?calleeCtx, ?to, ?basehctx, ?basevalue)
 
 综上所述：在Refl1例子中
 ReflectiveCallGraphEdge  - -> InvokeArgLoadArrayIndex  → LoadReflectiveValueArrayIndex  →  VarPointsTo,得到最后的VarPointsTo是var指向了一个TaintedValue
+
+在Refl2中如果想得到taintPath，思路如下：如果field.get(this)所指向的是name,而name所指向的taintedValue，那么就有LyjSmallVFlow(name, myName).
+{{./pasted_image025.png}}
 
 

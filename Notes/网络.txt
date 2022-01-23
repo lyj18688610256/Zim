@@ -12,3 +12,20 @@ http://192.168.11.67/
 
 在/etc/hosts文件中更新github网址之后，要想生效还要刷新dns缓存
 {{./pasted_image.png}}
+
+{{./pasted_image001.png}}
+
+{{./pasted_image002.png}}
+
+{{./pasted_image003.png}}
+{{./pasted_image004.png}}
+
+{{./pasted_image006.png}}
+{{./pasted_image005.png}}
+
+
+
+
+
+
+

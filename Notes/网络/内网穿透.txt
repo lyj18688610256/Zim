@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2022-01-23T12:34:36+08:00
+
+====== 内网穿透 ======
+创建日期 Sunday 23 January 2022
+
+视频教程
+https://www.bilibili.com/video/BV1hK4y1L7ND?from=search&seid=7277278045627528279&spm_id_from=333.337.0.0
+
+zerotier官网
+https://www.zerotier.com/
+{{./pasted_image005.png}}
+{{./pasted_image.png}}
+
+当在自己的linux系统中运行下面几条指令之后，就可以将自己的电脑加入到在zerotier中建立的虚拟VPN,然后需要在zerotier中将其激活，然后就可以根据下下图中的
+Managed IPs 互相访问了
+
+如下的配置是将电脑和虚拟局域网联系起来，而跟你电脑当前用的是有线还是无线网络还是用手机热点的网络没有关系
+比如我当前笔记本用的是手机热点提供的网络，也可以从笔记本ping同我实验室的电脑，可以ssh登录
+{{./pasted_image001.png}}
+
+{{./pasted_image006.png}}
+
+注
